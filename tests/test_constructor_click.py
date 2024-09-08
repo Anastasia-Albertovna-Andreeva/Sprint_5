@@ -13,7 +13,7 @@ class TestConstructorRedirects:
         WebDriverWait(driver, 20).until(
             EC.visibility_of_element_located(Locator.button_make_the_order)
         )
-        driver.find_element(*Locator.button_personal_account).click() # Переход в личный кабинет
+        driver.find_element(*Locator.button_personal_account).click() # Переход в ЛК
         WebDriverWait(driver, 20).until(
             EC.visibility_of_element_located(Locator.profile)
         )
